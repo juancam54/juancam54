@@ -31,9 +31,9 @@ body{font-family:'Satoshi',sans-serif;color:var(--ink);position:relative;overflo
 .h1a{left:40px;top:236px;font-size:92px;font-weight:900;letter-spacing:-.05em;line-height:1;white-space:nowrap}
 .h1a span{color:#7b9a86}
 .res{left:20px;top:304px;overflow:visible}
-.h1c{left:40px;top:456px;font-size:92px;font-weight:900;letter-spacing:-.05em;line-height:1;white-space:nowrap;color:var(--g2)}
-.pair{position:absolute;left:652px;top:214px;width:304px;transform:rotate(4deg);z-index:5;filter:drop-shadow(0 40px 36px rgba(11,40,24,.38)) drop-shadow(0 8px 12px rgba(11,40,24,.25))}
-.chipw{position:absolute;left:612px;top:500px;z-index:7;transform:rotate(-3deg);background:#fff;border-radius:20px;padding:10px 18px;display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;box-shadow:0 24px 44px rgba(11,40,24,.25),0 0 0 1.5px var(--line)}
+.h1c{left:40px;top:466px;font-size:92px;font-weight:900;letter-spacing:-.05em;line-height:1;white-space:nowrap;color:var(--g2)}
+.pair{position:absolute;left:640px;top:206px;width:324px;transform:rotate(4deg);z-index:5;filter:drop-shadow(0 40px 36px rgba(11,40,24,.38)) drop-shadow(0 8px 12px rgba(11,40,24,.25))}
+.chipw{position:absolute;left:600px;top:512px;z-index:7;transform:rotate(-3deg);background:#fff;border-radius:20px;padding:10px 18px;display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;box-shadow:0 24px 44px rgba(11,40,24,.25),0 0 0 1.5px var(--line)}
 .chipw small{display:block;font-size:12px;font-weight:600;color:#47604f}
 /* cards */
 .bc{position:absolute;border-radius:40px}
@@ -44,6 +44,10 @@ body{font-family:'Satoshi',sans-serif;color:var(--ink);position:relative;overflo
 .pill.w{color:#fff;background:rgba(255,255,255,.12)}
 .pill.g{color:var(--g1);background:rgba(255,255,255,.6)}
 /* tapgo */
+.t1{overflow:hidden}
+.t1 .streak{position:absolute;left:520px;top:-60px;width:140px;height:360px;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,rgba(168,224,160,.16),transparent)}
+.t1 .streak.s2{left:700px;width:60px;opacity:.7}
+.t1 .dotsg{position:absolute;right:0;top:0;width:360px;height:226px;opacity:.22;background-image:radial-gradient(rgba(212,245,205,.9) 1px,transparent 1.5px);background-size:20px 20px;-webkit-mask-image:linear-gradient(270deg,#000,transparent);mask-image:linear-gradient(270deg,#000,transparent)}
 .t1a{left:78px;top:654px;width:480px;font-size:34px;line-height:1.18;font-weight:300;letter-spacing:-.02em;color:#fff}
 .t1a b{font-weight:800}
 .t1b{left:612px;top:668px;width:330px;font-size:18px;line-height:1.35;font-weight:600;color:rgba(255,255,255,.9);padding-left:22px;border-left:2px solid var(--mint)}
@@ -58,9 +62,9 @@ body{font-family:'Satoshi',sans-serif;color:var(--ink);position:relative;overflo
 .ph{position:absolute;border:7px solid #090d0b;border-radius:40px;overflow:hidden;background:#000;box-shadow:0 0 0 2px rgba(255,255,255,.25),0 36px 56px rgba(0,0,0,.5)}
 .ph img{display:block;width:100%;height:100%;object-fit:cover}
 .ph:after{content:"";position:absolute;left:50%;top:8px;width:52px;height:16px;margin-left:-26px;border-radius:12px;background:#000}
-.pb2{left:612px;top:936px;width:168px;height:368px;transform:rotateY(-18deg) rotateX(5deg) rotateZ(-2deg)}
-.pa1{left:748px;top:868px;width:204px;height:446px;transform:rotateY(-18deg) rotateX(5deg) rotateZ(3deg)}
-.glowb{left:560px;top:880px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(212,245,205,.4),transparent 70%)}
+.pb2{left:596px;top:940px;width:160px;height:350px;transform:rotateY(-18deg) rotateX(5deg) rotateZ(-2deg)}
+.pa1{left:766px;top:826px;width:208px;height:456px;transform:rotateY(-18deg) rotateX(5deg) rotateZ(3deg)}
+.glowb{left:540px;top:840px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(212,245,205,.4),transparent 70%)}
 .chip{position:absolute;border-radius:18px;padding:10px 16px;display:flex;align-items:center;gap:12px;font-weight:800;font-size:17px;color:#fff;background:linear-gradient(135deg,rgba(24,62,42,.94),rgba(9,24,16,.92));border:1.5px solid rgba(168,224,160,.45);box-shadow:0 20px 40px rgba(0,0,0,.35);z-index:8}
 .chip small{display:block;font-size:12px;font-weight:600;color:rgba(255,255,255,.75)}
 /* pass */
@@ -73,7 +77,7 @@ body{font-family:'Satoshi',sans-serif;color:var(--ink);position:relative;overflo
 .mc em{position:absolute;right:10px;top:9px;font-style:normal;font-size:7px;font-weight:800;letter-spacing:.12em;color:var(--g2)}
 .mc.dk em{color:var(--mint)}
 .mc b{display:block;margin-top:14px;font-size:16px;line-height:1.05;font-weight:800;letter-spacing:-.02em}
-.mc small{display:block;margin-top:6px;font-size:9.5px;line-height:1.25;font-weight:500;opacity:.78}
+.mc small{display:block;margin-top:6px;font-size:10px;line-height:1.25;font-weight:500;opacity:.78}
 .fn{left:340px;top:1768px;display:flex;gap:16px;font-size:11px;font-weight:600;color:#2c4636}
 .fn span{display:flex;align-items:center;gap:6px}
 .walbox{left:56px;top:1336px;width:260px;height:330px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 66%,transparent 100%);mask-image:linear-gradient(180deg,#000 66%,transparent 100%)}
@@ -115,14 +119,14 @@ body{font-family:'Satoshi',sans-serif;color:var(--ink);position:relative;overflo
 <div class="abs h1a">¿Quieres <span>más</span></div>
 <svg class="abs res" width="620" height="190" viewBox="0 0 620 190">
  <defs><linearGradient id="gr" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#4a9d6a"/><stop offset=".55" stop-color="#1d4a32"/><stop offset="1" stop-color="#06130c"/></linearGradient></defs>
- <text x="0" y="148" font-family="Satoshi" font-weight="300" font-style="italic" font-size="178" letter-spacing="-5" fill="url(#gr)">reseñas</text>
+ <text x="0" y="156" font-family="Satoshi" font-weight="300" font-style="italic" font-size="190" letter-spacing="-6" fill="url(#gr)">reseñas</text>
 </svg>
 <div class="abs h1c">en Google?</div>
 <img class="pair" src="card_pair.png" alt="Tarjetas Cazu TapGo">
 <div class="chipw"><svg width="104" height="20" viewBox="0 0 104 20" fill="#f3a712"><path transform="translate(10 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(31 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(52 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(73 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(94 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/></svg><div>Nueva reseña<small>en Google · hace 1 min</small></div></div>
 
 <!-- TapGo -->
-<div class="bc t1"></div>
+<div class="bc t1"><div class="dotsg"></div><div class="streak"></div><div class="streak s2"></div></div>
 <p class="abs t1a"><b>Cazu TapGo</b> conecta a tus clientes con tu negocio mediante tarjetas inteligentes.</p>
 <p class="abs t1b">Consigue más reseñas en Google, reúne tu información digital en una sola página y descubre qué les interesa para atraerlos de nuevo.</p>
 
@@ -137,7 +141,7 @@ body{font-family:'Satoshi',sans-serif;color:var(--ink);position:relative;overflo
  <div class="ph pb2"><img src="ph2.jpg"></div>
  <div class="ph pa1"><img src="ph1.jpg"></div>
 </div>
-<div class="chip" style="left:548px;top:1226px;transform:rotate(-3deg)"><div>Mesa 7<small>escaneó hace 2 min</small></div></div>
+<div class="chip" style="left:540px;top:1208px;transform:rotate(-3deg)"><div>Mesa 7<small>escaneó hace 2 min</small></div></div>
 
 <!-- Pass -->
 <div class="bc c1"></div>
