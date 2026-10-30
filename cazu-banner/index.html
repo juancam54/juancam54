@@ -32,40 +32,49 @@ body{font-family:'Satoshi',sans-serif;color:#fff;position:relative;overflow:hidd
 .pill i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 10px var(--mint)}
 .glass{background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(255,255,255,.06));border:1.5px solid rgba(255,255,255,.28);backdrop-filter:blur(16px);box-shadow:0 24px 50px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.3)}
 .chip{position:absolute;border-radius:20px;padding:12px 20px;display:flex;align-items:center;gap:12px;font-weight:800;font-size:19px;color:#fff;z-index:6}
+.chip.glass{background:linear-gradient(135deg,rgba(24,62,42,.94),rgba(9,24,16,.92));border:1.5px solid rgba(168,224,160,.45)}
 .chip small{display:block;font-size:13px;font-weight:600;color:var(--soft)}
 .chip .big{font-size:32px;font-weight:900;letter-spacing:-.03em;color:var(--mint)}
 .ital{font-style:italic;font-weight:300}
 /* ---------- hero ---------- */
-.h1a{left:60px;top:288px;font-size:108px;font-weight:900;letter-spacing:-.05em;line-height:1;white-space:nowrap}
+.h1a{left:60px;top:288px;font-size:100px;font-weight:900;letter-spacing:-.05em;line-height:1;white-space:nowrap}
 .res{left:30px;top:386px;overflow:visible}
 .h1c{left:60px;top:604px;font-size:108px;font-weight:900;letter-spacing:-.05em;line-height:1;white-space:nowrap;color:#8fdc98;text-shadow:0 0 50px rgba(95,190,125,.5)}
 .lead{left:64px;top:752px;width:470px;font-size:26px;line-height:1.3;color:var(--soft);font-weight:400}
 .lead b{color:#fff;font-weight:800}
 .cta{left:64px;top:876px;font-weight:800;font-size:23px;color:var(--ink);background:#fff;border-radius:99px;padding:10px 32px 10px 12px;display:flex;align-items:center;gap:14px;box-shadow:0 18px 50px rgba(168,224,160,.4)}
 .cta i{width:44px;height:44px;border-radius:50%;background:var(--g3);display:grid;place-items:center}
-.glowc{left:520px;top:330px;width:620px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(168,224,160,.55),rgba(74,157,106,.2) 45%,transparent 70%)}
-.pair{position:absolute;left:626px;top:424px;width:364px;transform:rotate(3deg);filter:drop-shadow(0 50px 50px rgba(0,0,0,.55)) drop-shadow(0 0 40px rgba(168,224,160,.35))}
+.glowc{left:560px;top:300px;width:620px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(168,224,160,.55),rgba(74,157,106,.2) 45%,transparent 70%)}
+.pair{position:absolute;left:548px;top:688px;width:316px;z-index:5;transform:rotate(-5deg);filter:drop-shadow(0 50px 50px rgba(0,0,0,.55)) drop-shadow(0 0 40px rgba(168,224,160,.35))}
+/* ---------- tarjetas (slabs) ---------- */
+.slab{position:absolute;left:64px;width:892px;border-radius:46px;overflow:visible}
+.slab.dark{top:1016px;height:500px;background:linear-gradient(135deg,rgba(95,190,125,.42) 0%,rgba(29,74,50,.62) 45%,rgba(6,19,12,.85) 100%);border:1.5px solid rgba(168,224,160,.45);box-shadow:0 50px 90px rgba(0,0,0,.55),inset 0 1.5px 0 rgba(255,255,255,.35),inset 0 0 80px rgba(168,224,160,.12)}
+.slab.light{top:1540px;height:296px;background:linear-gradient(120deg,#f1faec 0%,#c9eabb 55%,#8fd096 100%);box-shadow:0 50px 90px rgba(0,0,0,.5),inset 0 2px 0 #fff}
+.ghost{position:absolute;pointer-events:none}
 /* ---------- plus ---------- */
-.h2{left:64px;font-size:56px;line-height:1;font-weight:900;letter-spacing:-.045em}
+.h2{left:104px;font-size:56px;line-height:1;font-weight:900;letter-spacing:-.045em}
 .h2 em{font-style:italic;font-weight:300;color:var(--mint);font-size:82px;letter-spacing:-.03em;line-height:.95}
-.rows{left:64px;width:470px;list-style:none;font-size:26px;font-weight:600}
-.rows li{display:flex;align-items:center;gap:18px;padding:16px 0;border-top:1.5px solid rgba(168,224,160,.28)}
+.rows{left:104px;width:430px;list-style:none;font-size:24px;font-weight:600}
+.rows li{display:flex;align-items:center;gap:18px;padding:13px 0;border-top:1.5px solid rgba(168,224,160,.28)}
 .rows li:last-child{border-bottom:1.5px solid rgba(168,224,160,.28)}
 .rows li i{font-style:normal;font-size:14px;font-weight:800;letter-spacing:.14em;color:var(--mint);width:30px}
 .stage{left:0;top:0;width:1020px;height:2001px;perspective:1500px;pointer-events:none}
 .ph{position:absolute;border:8px solid #090d0b;border-radius:44px;overflow:hidden;background:#000;box-shadow:0 0 0 2px rgba(255,255,255,.22),0 50px 80px rgba(0,0,0,.6),0 0 100px rgba(168,224,160,.3)}
 .ph img{display:block;width:100%;height:100%;object-fit:cover}
 .ph:after{content:"";position:absolute;left:50%;top:9px;width:60px;height:18px;margin-left:-30px;border-radius:12px;background:#000}
-.pa{left:574px;top:1118px;width:164px;height:360px;transform:rotateY(-26deg) rotateX(6deg) rotateZ(-3deg)}
-.pb{left:722px;top:1016px;width:240px;height:526px;transform:rotateY(-22deg) rotateX(7deg) rotateZ(3deg)}
-.glow2{left:500px;top:940px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(168,224,160,.5),rgba(74,157,106,.15) 45%,transparent 70%)}
+.pa{left:668px;top:968px;width:230px;height:504px;transform:rotateY(-22deg) rotateX(7deg) rotateZ(3deg)}
+.pc{left:688px;top:306px;width:310px;height:680px;transform:rotateY(-24deg) rotateX(8deg) rotateZ(5deg)}
+.pb{left:706px;top:930px;width:244px;height:534px;transform:rotateY(-22deg) rotateX(7deg) rotateZ(3deg)}
+.pill.lt{color:#1d4a32;border-color:rgba(29,74,50,.6);background:rgba(255,255,255,.5)}
+.pill.lt i{background:#2a6b47;box-shadow:none}
+.glow2{left:420px;top:880px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(168,224,160,.5),rgba(74,157,106,.15) 45%,transparent 70%)}
 /* ---------- pass ---------- */
-.h3{left:430px;top:1664px;width:560px;font-size:52px;line-height:1;font-weight:900;letter-spacing:-.045em}
-.h3 em{font-style:italic;font-weight:300;color:var(--mint);font-size:74px;letter-spacing:-.03em;line-height:.95}
-.p3{left:430px;top:1808px;width:520px;font-size:21px;line-height:1.3;color:var(--soft);font-weight:400}
-.p3 b{color:#fff;font-weight:800}
-.walbox{left:70px;top:1596px;width:300px;height:292px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 55%,transparent 100%)}
-.wal{position:absolute;left:30px;top:20px;width:236px;height:400px;border-radius:44px;background:#f2f4ef;border:9px solid #090d0b;box-shadow:0 0 0 2px rgba(255,255,255,.2);padding:34px 14px 0;transform:rotate(-5deg);color:#0b1a12}
+.h3{left:430px;top:1622px;width:520px;font-size:50px;line-height:1;font-weight:900;letter-spacing:-.045em;color:#06130c}
+.h3 em{font-style:italic;font-weight:300;color:#1d6b43;font-size:72px;letter-spacing:-.03em;line-height:.95}
+.p3{left:430px;top:1768px;width:500px;font-size:20px;line-height:1.3;color:#2c4636;font-weight:500}
+.p3 b{color:#06130c;font-weight:800}
+.walbox{left:84px;top:1556px;width:300px;height:280px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 55%,transparent 100%)}
+.wal{position:absolute;left:30px;top:20px;width:236px;height:400px;border-radius:44px;background:#f2f4ef;border:9px solid #090d0b;box-shadow:0 20px 50px rgba(20,51,35,.45);padding:34px 14px 0;transform:rotate(-5deg);color:#0b1a12}
 .wal:before{content:"";position:absolute;left:50%;top:10px;width:66px;height:19px;margin-left:-33px;background:#090d0b;border-radius:12px}
 .wal .w{font-weight:800;font-size:19px;margin:6px 6px 10px}
 .wal .cd{border-radius:22px;background:linear-gradient(150deg,#2f7a52,#143323);padding:16px;height:210px;color:#fff;box-shadow:0 14px 26px rgba(20,51,35,.4)}
@@ -76,16 +85,16 @@ body{font-family:'Satoshi',sans-serif;color:#fff;position:relative;overflow:hidd
 .wal .dots2 i{width:30px;height:30px;border-radius:50%;background:var(--mint);display:grid;place-items:center}
 .wal .dots2 i.e{background:none;border:2px dashed rgba(255,255,255,.6)}
 .wal .cd .f{font-size:12px;color:rgba(255,255,255,.75)}
-.toast{position:absolute;left:272px;top:1706px;z-index:3;background:#fff;border-radius:18px;padding:11px 18px;font-size:16px;box-shadow:0 20px 40px rgba(0,0,0,.4);line-height:1.2;color:#0b1a12;transform:rotate(3deg)}
+.toast{position:absolute;left:300px;top:1716px;z-index:3;background:#fff;border-radius:18px;padding:11px 18px;font-size:16px;box-shadow:0 20px 40px rgba(0,0,0,.4);line-height:1.2;color:#0b1a12;transform:rotate(3deg)}
 .toast b{color:var(--g2);display:block;font-size:18px}
 /* ---------- footer ---------- */
-.frule{left:64px;right:64px;top:1904px;height:1.5px;background:linear-gradient(90deg,rgba(255,255,255,.18),rgba(168,224,160,.8))}
-.foot{left:64px;right:64px;top:1920px;height:60px}
+.frule{left:64px;right:64px;top:1872px;height:1.5px;background:linear-gradient(90deg,rgba(255,255,255,.18),rgba(168,224,160,.8))}
+.foot{left:64px;right:64px;top:1900px;height:70px}
 .foot .t{position:absolute;left:0;top:0;font-size:26px;font-weight:900;letter-spacing:-.035em;line-height:1.05}
 .foot .t em{font-style:italic;font-weight:300;color:var(--mint);font-size:30px;letter-spacing:-.02em;display:block}
 .foot .c{position:absolute;right:92px;top:2px;text-align:right;font-weight:900;font-size:26px;color:var(--mint);letter-spacing:-.02em;line-height:1.2}
 .foot .c span{display:block;color:#fff;font-weight:600;font-size:17px;letter-spacing:0}
-.foot .q{position:absolute;right:0;top:-4px;width:68px;height:68px;border-radius:12px;background:#fff;padding:6px}
+.foot .q{position:absolute;right:0;top:-2px;width:72px;height:72px;border-radius:12px;background:#fff;padding:6px}
 .foot .q img{width:100%;height:100%;display:block}
 </style></head><body>
 <div class="bg"></div>
@@ -108,21 +117,24 @@ body{font-family:'Satoshi',sans-serif;color:#fff;position:relative;overflow:hidd
 <div class="abs cta"><i><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#fff" stroke-width="2.4"><circle cx="11" cy="11" r="9"/><circle cx="11" cy="11" r="3.2" fill="#fff"/></svg></i>Acerca tu celular</div>
 <div class="abs glowc"></div>
 <img class="pair" src="card_pair.png" alt="Tarjetas Cazu TapGo">
-<div class="chip glass" style="left:630px;top:850px;transform:rotate(-2deg)"><svg width="104" height="20" viewBox="0 0 104 20" fill="#f6b73c"><path transform="translate(10 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(31 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(52 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(73 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(94 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/></svg><div>Nueva reseña<small>en Google · hace 1 min</small></div></div>
+<div class="chip glass" style="left:628px;top:548px;transform:rotate(-3deg)"><svg width="104" height="20" viewBox="0 0 104 20" fill="#f6b73c"><path transform="translate(10 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(31 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(52 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(73 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/><path transform="translate(94 10)" d="M0 -9.5 L2.8 -3 9.5 -2.9 4.2 1.4 6 8 0 4.3 -6 8 -4.2 1.4 -9.5 -2.9 -2.8 -3Z"/></svg><div>Nueva reseña<small>en Google · hace 1 min</small></div></div>
 
 <!-- 02 Plus -->
 <div class="abs glow2"></div>
-<div class="abs pill" style="left:64px;top:1020px"><i></i>TAPGO PLUS</div>
-<h2 class="abs h2" style="top:1082px">¿Y sabes cuántos<br><em>clientes</em> te visitan?</h2>
-<ul class="abs rows" style="top:1288px"><li><i>01</i>Cuántos entran y qué tocan</li><li><i>02</i>Desde qué mesa llegan</li><li><i>03</i>Tu página con menú y WhatsApp</li></ul>
+<div class="abs slab dark"></div>
+<div class="abs pill" style="left:104px;top:1054px"><i></i>TAPGO PLUS</div>
+<h2 class="abs h2" style="top:1116px">¿Y sabes cuántos<br><em>clientes</em> te visitan?</h2>
+<ul class="abs rows" style="top:1318px"><li><i>01</i>Cuántos entran y qué tocan</li><li><i>02</i>Desde qué mesa llegan</li><li><i>03</i>Tu página con menú y WhatsApp</li></ul>
 <div class="abs stage">
+ <div class="ph pc"><img src="ph1.jpg"></div>
  <div class="ph pa"><img src="ph2.jpg"></div>
- <div class="ph pb"><img src="ph1.jpg" style="object-position:50% 100%"></div>
 </div>
-<div class="chip glass" style="left:548px;top:1500px;transform:rotate(-3deg)"><div><span class="big">+128</span><small>visitas hoy</small></div></div>
+<div class="chip glass" style="left:586px;top:1380px;transform:rotate(-3deg)"><div><span class="big">+128</span><small>visitas hoy</small></div></div>
+<div class="chip glass" style="left:818px;top:1070px;transform:rotate(3deg)"><div>Mesa 7<small>escaneó hace 2 min</small></div></div>
 
 <!-- 03 Pass -->
-<div class="abs pill" style="left:430px;top:1612px"><i></i>CAZU PASS</div>
+<div class="abs slab light"></div>
+<div class="abs pill lt" style="left:430px;top:1566px"><i></i>CAZU PASS</div>
 <h3 class="abs h3">Tus clientes vuelven<br>por su <em>premio.</em></h3>
 <p class="abs p3"><b>Cazu Pass</b> es tu tarjeta de fidelización de sellos en la Wallet de tu iPhone o Android. <b>Sin cartón y sin apps.</b></p>
 <div class="abs" style="left:60px;top:1620px;width:320px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(168,224,160,.35),transparent 70%)"></div>
