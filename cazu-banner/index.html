@@ -13,11 +13,12 @@ body{font-family:'Urbanist',sans-serif;color:#fff;position:relative;overflow:hid
  radial-gradient(800px 600px at 90% 56%,rgba(74,157,106,.5),transparent 62%),
  radial-gradient(700px 600px at 0% 70%,rgba(42,107,71,.45),transparent 62%),
  linear-gradient(180deg,#0e2a1b 0%,#09180f 50%,#07130c 100%)}
-.dots{position:absolute;left:0;right:0;top:960px;height:600px;opacity:.18;background-image:radial-gradient(rgba(168,224,160,.9) 1px,transparent 1.4px);background-size:22px 22px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%,transparent);mask-image:linear-gradient(180deg,transparent,#000 30%,transparent)}
-.dome1{position:absolute;left:-440px;top:-1000px;width:1900px;height:2070px;border-radius:50%;background:radial-gradient(circle at 50% 62%,#fcfef9 0%,#eef7e8 55%,#d3ebcb 100%);box-shadow:0 0 0 14px rgba(168,224,160,.1),0 0 0 34px rgba(168,224,160,.07),0 50px 140px rgba(168,224,160,.35)}
-.dome2{position:absolute;left:-390px;top:1470px;width:1800px;height:1200px;border-radius:50%;background:radial-gradient(circle at 50% 30%,#f2faee 0%,#cdeabd 55%,#9fd89a 100%);box-shadow:0 0 0 14px rgba(168,224,160,.12),0 0 0 34px rgba(168,224,160,.07),0 -40px 120px rgba(168,224,160,.35)}
-.arcs{position:absolute;inset:0;width:100%;height:100%}
+.dots{position:absolute;left:0;right:0;top:900px;height:660px;opacity:.18;background-image:radial-gradient(rgba(168,224,160,.9) 1px,transparent 1.4px);background-size:22px 22px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%,transparent);mask-image:linear-gradient(180deg,transparent,#000 30%,transparent)}
 .grain{position:absolute;inset:0;opacity:.08;mix-blend-mode:overlay;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.hero-bg{position:absolute;left:0;top:0;width:1020px;height:2001px;background:linear-gradient(168deg,#fdfefb 0%,#eef7e8 45%,#cfe9c6 100%);clip-path:polygon(0 0,100% 0,100% 842px,0 944px)}
+.pass-bg{position:absolute;left:0;top:0;width:1020px;height:2001px;background:linear-gradient(180deg,#f4fbf0 0%,#cdeabd 50%,#8fd096 100%);clip-path:polygon(0 1596px,100% 1486px,100% 2001px,0 2001px)}
+.beam{position:absolute;top:900px;height:700px;width:150px;transform:skewX(-24deg);background:linear-gradient(90deg,transparent,rgba(168,224,160,.14),transparent)}
+.lines{position:absolute;left:0;top:0;width:100%;height:100%}
 /* ---------- header ---------- */
 .logo{left:56px;top:46px;display:flex;align-items:center;gap:16px}
 .logo .ic{width:78px;height:78px;border-radius:12px;background:linear-gradient(90deg,#4fa56f,#1b3d2b);position:relative;box-shadow:0 14px 30px rgba(29,74,50,.35)}
@@ -113,11 +114,18 @@ body{font-family:'Urbanist',sans-serif;color:#fff;position:relative;overflow:hid
 </style></head><body>
 <div class="bg"></div>
 <div class="dots"></div>
-<div class="dome1"></div>
-<div class="dome2"></div>
-<svg class="arcs" viewBox="0 0 1020 2001" fill="none" stroke-width="1.4">
- <ellipse cx="510" cy="35" rx="980" ry="1100" stroke="rgba(168,224,160,.5)"/><ellipse cx="510" cy="35" rx="1020" ry="1150" stroke="rgba(168,224,160,.28)"/><ellipse cx="510" cy="35" rx="1070" ry="1210" stroke="rgba(168,224,160,.15)"/>
- <ellipse cx="510" cy="2060" rx="940" ry="640" stroke="rgba(11,26,18,.18)"/>
+<div class="hero-bg"></div>
+<div class="pass-bg"></div>
+<div class="beam" style="left:40px"></div><div class="beam" style="left:300px;width:60px;opacity:.7"></div><div class="beam" style="left:520px;width:220px;opacity:.6"></div>
+<svg class="lines" viewBox="0 0 1020 2001" fill="none" stroke-linecap="round">
+ <path d="M0 944 L1020 842" stroke="#a8e0a0" stroke-width="3"/>
+ <path d="M0 962 L1020 860" stroke="rgba(168,224,160,.55)" stroke-width="1.6"/>
+ <path d="M0 984 L1020 882" stroke="rgba(168,224,160,.3)" stroke-width="1.4"/>
+ <path d="M0 1010 L1020 908" stroke="rgba(168,224,160,.15)" stroke-width="1.4"/>
+ <path d="M0 1596 L1020 1486" stroke="#2a6b47" stroke-width="3"/>
+ <path d="M0 1578 L1020 1468" stroke="rgba(42,107,71,.5)" stroke-width="1.6"/>
+ <path d="M0 1556 L1020 1446" stroke="rgba(168,224,160,.35)" stroke-width="1.4"/>
+ <path d="M0 1530 L1020 1420" stroke="rgba(168,224,160,.18)" stroke-width="1.4"/>
 </svg>
 
 <!-- header -->
